@@ -1,0 +1,3 @@
+Explosion: https://opengameart.org/content/spritesheet-explosion
+
+Space: https://opengameart.org/content/space-background-1
