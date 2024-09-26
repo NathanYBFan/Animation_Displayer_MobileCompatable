@@ -219,7 +219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -99082232, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -822,6 +822,8 @@ MonoBehaviour:
   - {fileID: 1333747827, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
   - {fileID: -844277001, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
   - {fileID: 1308790599, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  animationSprite: {fileID: 167798828}
+  timerMax: 0.02
 --- !u!1 &969822473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb359c8658380e40bd51ebfec123c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animController: {fileID: 889081921}
 --- !u!1 &1239649958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2106653267}
   - component: {fileID: 2106653268}
+  - component: {fileID: 2106653269}
   m_Layer: 5
   m_Name: SpeedSlider
   m_TagString: Untagged
@@ -1593,6 +1595,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2106653269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106653266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcdbc9be8b7256c4e87dafe73e7711ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

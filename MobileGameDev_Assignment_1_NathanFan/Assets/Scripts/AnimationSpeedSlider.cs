@@ -3,11 +3,8 @@ using UnityEngine.UI;
 
 public sealed class AnimationSpeedSlider : MonoBehaviour
 {
-    [SerializeField] private AnimationController animController;
-
+    // UI element
     private Slider speedSlider;
-
-    [Range(0, 1)] private float speed;
 
     void Start()
     {
@@ -18,6 +15,6 @@ public sealed class AnimationSpeedSlider : MonoBehaviour
 
     private void OnSpeedChanged(float newSpeed)
     {
-        animController.SetAnimationSpeed(newSpeed);
+        AnimationController.Instance.SetAnimationSpeed(newSpeed);
     }
 }

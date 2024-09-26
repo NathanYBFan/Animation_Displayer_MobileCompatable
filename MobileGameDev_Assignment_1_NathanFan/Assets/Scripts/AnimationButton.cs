@@ -11,8 +11,6 @@ public sealed class AnimationButton : MonoBehaviour
     // Animation State
     private enums.buttonStates currentState;
 
-    [SerializeField] AnimationController animController;
-
     private void Start()
     {
         currentState = enums.buttonStates.paused;
@@ -24,9 +22,10 @@ public sealed class AnimationButton : MonoBehaviour
 
     public void OnButtonClick()
     {
+        // set correct current state
         currentState = currentState == 0 ? enums.buttonStates.paused : enums.buttonStates.playing;
         textBox.text = currentState == 0 ? "Pause" : "Play";
 
-        animController.SetAnimationState(currentState);
+        AnimationController.Instance.SetAnimationState(currentState);
     }
 }
