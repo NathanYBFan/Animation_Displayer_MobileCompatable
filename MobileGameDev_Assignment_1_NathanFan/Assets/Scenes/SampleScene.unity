@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 889081919}
   - component: {fileID: 889081918}
   - component: {fileID: 889081917}
+  - component: {fileID: 889081921}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -781,6 +782,46 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &889081921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889081916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535e3a474880e2845a6e797c00d7e3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSprites:
+  - {fileID: -99082232, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1106356243, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1351379979, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1062943533, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1573964249, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1477046101, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1822587582, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1447127216, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1101490710, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -752215908, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1603798845, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1629355539, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1359713460, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1391103108, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 192424453, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1429441557, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 938227289, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1422074380, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1782353884, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -1978064996, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -736490236, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 178255389, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1699154988, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 87105066, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1333747827, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: -844277001, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
+  - {fileID: 1308790599, guid: 89c170b4e40b72943a0df9bf8ddc21e9, type: 3}
 --- !u!1 &969822473
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +946,7 @@ GameObject:
   - component: {fileID: 1029060906}
   - component: {fileID: 1029060905}
   - component: {fileID: 1029060904}
+  - component: {fileID: 1029060907}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -1014,6 +1056,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029060902}
   m_CullTransparentMesh: 1
+--- !u!114 &1029060907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029060902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb359c8658380e40bd51ebfec123c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animController: {fileID: 889081921}
 --- !u!1 &1239649958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,7 +1589,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
